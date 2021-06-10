@@ -9,8 +9,19 @@ export default function App() {
         <TextInput placeholder="Item de lista" style={styles.input} />
         <Button title="ADD" />
       </View>
-      <View>
-
+      <View style={styles.items}>
+        <View style={styles.item}>
+          <Text>Leche</Text>
+          <Button title="X" />
+        </View>
+        <View style={styles.item}>
+          <Text>Atún</Text>
+          <Button title="X" />
+        </View>
+        <View style={styles.item}>
+          <Text>Cebolla</Text>
+          <Button title="X" />
+        </View>
       </View>
       <StatusBar style="auto" />
     </View>
@@ -30,5 +41,21 @@ const styles = StyleSheet.create({
     borderBottomColor: 'black',
     borderBottomWidth: 1,
     width: 200,
+  },
+  items: {
+    backgroundColor: '#ECECEC',
+    paddingLeft: 20,
+    paddingRight: 20,
+    marginTop: 20,
+  },
+  item: {
+    padding: 10,
+    marginTop: 10,
+    marginBottom: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    borderColor: 'black',
+    borderWidth: 1,
   },
 });
